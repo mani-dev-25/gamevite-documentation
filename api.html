@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GameVite - API Documentation</title>
+        <link rel="icon" href="logo.png">
+    </head>
+    <body>
+        <header style="text-align: center">
+            <h1>Game<span style="color: red;">Vite</span></h1>
+            <p>A Complete Online Game Store Management System</p>
+            <hr>
+        </header>
+        <nav style="text-align: center;">
+            <a href="index.html">Home</a>
+            <a href="introduction.html">Introduction</a>
+            <a href="installation.html">Installation</a>
+            <a href="features.html">Features</a>
+            <a href="api.html">API Docs</a>
+            <a href="user-guide.html">User Guide</a>
+            <a href="error-codes.html">Error Codes</a>
+            <a href="changelog.html">Changelog</a>
+            <a href="support.html">support</a>
+        </nav>
+        <hr>
+        
+        <h1><u>API Documentation</u></h1>
+        <h2>Create User</h2>
+        <p><strong>Endpoint:</strong>/api/users</p>
+        <p><strong>Method:</strong>POST</p>
+
+        <table border="1">
+            <tr>
+                <th>Parameter</th>
+                <th>Type</th>
+                <th>Required</th>
+            </tr>
+            <tr>
+                <td>username</td>
+                <td>String</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>password</td>
+                <td>String</td>
+                <td>Yes</td>
+            </tr>
+        </table>
+
+        <h3>Sample Request</h3>
+        <pre>
+            POST /api/users
+            {
+                "username":"mani",
+                "password":"123456"
+            }
+        </pre>
+        <h3>Sample Response</h3>
+        <pre>
+            {
+                "message":"User created Successfully"
+            }
+        </pre>
+
+        <hr>
+
+        <footer>
+            <p style="text-align: right;">&copy 2026 GameVite Documentation</p>
+        </footer>
+    </body>
+</html>
